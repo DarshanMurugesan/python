@@ -1,0 +1,25 @@
+import numpy as np
+values=np.array([0,1,2,3,4])
+sinh_values=np.sinh(values)
+print("Hyperbolic Sine of Array Elements:\n",sinh_values)
+values=np.array([0,1,2,3,4])
+cosh_values=np.cosh(values)
+print("Hyperbolic Cosine of Array Elements:\n",cosh_values)
+values=np.array([0,1,2,3,4])
+tanh_values=np.tanh(values)
+print("Hyperbolic Tangent of Array Elements:\n",tanh_values)
+sinh_values=np.array([0,1,2])
+cosh_values=np.array([1,2,3])
+tanh_values=np.array([0,0.5,0.8])
+arcsinh_values=np.arcsinh(sinh_values)
+print("Arcsinh of values:\n",arcsinh_values)
+
+OUTPUT:
+Hyperbolic Sine of Array Elements:
+ [ 0.          1.17520119  3.62686041 10.01787493 27.2899172 ]
+Hyperbolic Cosine of Array Elements:
+ [ 1.          1.54308063  3.76219569 10.067662   27.30823284]
+Hyperbolic Tangent of Array Elements:
+ [0.         0.76159416 0.96402758 0.99505475 0.9993293 ]
+Arcsinh of values:
+ [0.         0.88137359 1.44363548]
