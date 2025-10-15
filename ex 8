@@ -1,0 +1,68 @@
+import matplotlib.pyplot as plt
+months=['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec']
+sales_product_A=[150,200,250,300,350,280,320,400,380,420,450,500]
+sales_product_B=[180,220,240,280,340,300,360,420,400,440,470,520]
+plt.figure(figsize=(10,6))
+plt.plot(months,sales_product_A,marker='o',linestyle='-',color='blue',label='Product A')
+plt.plot(months,sales_product_B,marker='s',linestyle='--',color='green',label='Product B')
+plt.title('Monthly Sales Comparsion of Product A and Product B')
+plt.xlable('Months')
+plt.ylable('Sales ($)')
+plt.grid(True)
+plt.legend()
+plt.show() 
+
+
+import matplotlib.pyplot as plt
+import numpy as np
+countries=['USA','India','China','Brazil','Nigeria','Russia','japan']
+populations=[331,1380,1441,213,206,146,126]
+colors=plt.cm.viridis(np.linspace(0,1,len(countries)))
+plt.figure(figsize=(10,6))
+plt.bar(countries,populations,color=colors)
+plt.title('Population of Different countries',fontsize=16)
+plt.xlabel('countries',fontsize=12)
+plt.ylabel('Population (in millions)',fontsize=12)
+plt.show()
+
+from matplotlib import pyplot as plt
+import numpy as np
+cars=['AUDI','BMW','FORD','TESLA','JAGUR','MERCEDES']
+data=[23,18,35,29,12,41]
+fig=plt.figure(figsize=(10,7))
+plt.pie(data,labels=cars)
+plt.show()
+
+import matplotlib.pyplot as plt
+population_age=[22,55,62,45,21,22,34,42,42,4,2,105,95,85,88,110,55,11,80,66,34,56,78]
+bins=[0,10,20,30,40,50,60,70,80,90,100]
+plt.hist(population_age,bins,histtype='bar',rwidth=0.8)
+plt.xlabel('age groups')
+plt.ylabel('Number of people')
+plt.title('Histogram')
+plt.show()
+
+import matplotlib.pyplot as plt
+import numpy as np
+height=np.random.uniform(150,200,size=50)
+weight=np.random.uniform(50,100,size=50)
+plt.scatter(height,weight)
+plt.title('Height vs Weight')
+plt.xlabel('Height(cm)')
+plt.ylabel('Weight(kg)')
+plt.show()
+
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+import numpy as np
+fig=plt.figure()
+ax=fig.add_subplot(111,projection='3d')
+x=np.random.rand(100)
+y=np.random.rand(100)
+z=np.random.rand(100)
+ax.sactter(x,y,z)
+ax.set_title('3D Scatter Plot')
+ax.set_xlabel('X Label')
+ax.set_ylabel('Y Label')
+ax.set_zlabel('Z Label')
+plt.show()
