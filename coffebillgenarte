@@ -1,0 +1,31 @@
+print("COFFEE SHOP")
+print("1. Espresso - ₹100")
+print("2. Cappuccino - ₹150")
+print("3. Latte - ₹180")
+total = 0
+
+i = 0
+while i < 3:
+   choice = int(input("Enter your coffee choice (1-5): "))
+   match choice:
+    case 1:
+       total = total +100
+    case 2:
+        total = total + 150
+    case 3:
+        total = total +180
+    case 4:
+        break
+
+print("total :", total)  
+
+  OUTPUT:
+COFFEE SHOP
+1. Espresso - ₹100
+2. Cappuccino - ₹150
+3. Latte - ₹180
+Enter your coffee choice (1-5): 1
+Enter your coffee choice (1-5): 2
+Enter your coffee choice (1-5): 1
+Enter your coffee choice (1-5): 4
+total : 350
