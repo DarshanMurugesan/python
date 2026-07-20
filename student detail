@@ -1,0 +1,35 @@
+name = input("Enter Student Name:")
+mark1 = float(input("Enter Register Number:"))
+mark2 = input("Year:")
+mark8 = input("Department:")
+mark3 = float(input("Enter Sub 1:"))
+mark4 = float(input("Enter Sub 2:"))
+mark5 = float(input("Enter Sub 3:"))
+mark6 = float(input("Enter Sub 4:"))
+mark7 = float(input("Enter Sub 5:"))
+average = (mark3+mark4+mark5+mark6+mark7)/5
+print("\nStudent name:",name)
+print("Average mark:",average)   
+
+
+
+
+
+
+
+
+
+
+OUTPUT:
+Enter Student Name:Darshan
+Enter Register Number:2403737724421003
+Year:III
+Department:B.TECH CSBS
+Enter Sub 1:98
+Enter Sub 2:97
+Enter Sub 3:99
+Enter Sub 4:98
+Enter Sub 5:97
+
+Student name: Darshan
+Average mark: 97.8
